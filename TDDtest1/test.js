@@ -1,7 +1,7 @@
 /**
  * Created by wangpu on 17-4-13.
  */
-descripe('', () => {
+descripe('check input is odd or even or string', () => {
 
     it('should return isEven if input is a even number', () =>{
        const actualValue = checkString(2);
