@@ -7,8 +7,13 @@ describe('test taxi price', () => {
         expect(result).toEqual(9);
     });
 
-    it('should 11 return yuan if input distance big than 2 km but less than 8 km', () => {
+    it('should return 11 yuan if input distance big than 2 km but less than 8 km', () => {
         const result = calculateTaxiFee(6,25);
         expect(result).toEqual(11);
+    });
+
+    it('should return 18 yuan if input distance big than 8 km', () => {
+        const result = calculateTaxiFee(9.2,40);
+        expect(result).toEqual(18);
     });
 });
