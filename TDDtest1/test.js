@@ -12,5 +12,9 @@ descripe('', () => {
         const actualValue = checkString(3);
         expect(actualValue).toBe('isOdd');
     });
-    
+
+    it('should return isStr if input is string', () =>{
+        const actualValue = checkString('Hello');
+        expect(actualValue).toBe('isStr');
+    });
 })
